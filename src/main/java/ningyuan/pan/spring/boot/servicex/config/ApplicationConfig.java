@@ -6,6 +6,7 @@ package ningyuan.pan.spring.boot.servicex.config;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 
 /**
@@ -14,8 +15,9 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan({"ningyuan.pan.spring.boot.servicex.application", "ningyuan.pan.spring.boot.servicex.impl",
-	"ningyuan.pan.spring.boot.servicex.web.controller"})
+@ComponentScan({"ningyuan.pan.spring.boot.servicex.application", 
+	"ningyuan.pan.spring.boot.servicex.impl"})
+@Import({WebConfig.class})
 public class ApplicationConfig {
 
 }
