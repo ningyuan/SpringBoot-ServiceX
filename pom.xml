@@ -9,11 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ningyuan.pan</groupId>
-	<artifactId>spring.boot.ServiceX</artifactId>
+	<artifactId>spring-boot-servicex</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring.boot.ServiceX</name>
+	<name>spring-boot-servicex</name>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>
 		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
 	</properties>
