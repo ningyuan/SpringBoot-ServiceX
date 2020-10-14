@@ -8,7 +8,7 @@ import ningyuan.pan.spring.boot.servicex.config.ApplicationConfig;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class Application {
+public class ServiceXApp {
 
 	public static void main(String[] args) {
 		SpringApplication bootstrap = new SpringApplication(ApplicationConfig.class);
