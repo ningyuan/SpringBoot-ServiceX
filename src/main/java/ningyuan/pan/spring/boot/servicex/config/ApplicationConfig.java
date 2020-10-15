@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Import;
 @EnableAutoConfiguration
 @ComponentScan({"ningyuan.pan.spring.boot.servicex.application", 
 	"ningyuan.pan.spring.boot.servicex.impl"})
-@Import({WebConfig.class})
+@Import({BeanConfig.class, WebConfig.class})
 public class ApplicationConfig {
 
 }

@@ -3,6 +3,8 @@
  */
 package ningyuan.pan.spring.boot.servicex;
 
+import java.util.List;
+
 /**
  * @author ningyuan
  *
@@ -10,5 +12,7 @@ package ningyuan.pan.spring.boot.servicex;
 public interface XService {
 	
 	public String getName();
+	
+	public List<String> getNamesOfDependentServices();
 	
 }

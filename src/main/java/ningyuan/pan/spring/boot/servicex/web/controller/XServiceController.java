@@ -3,6 +3,8 @@
  */
 package ningyuan.pan.spring.boot.servicex.web.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,7 +23,7 @@ import ningyuan.pan.spring.boot.servicex.XService;
 public class XServiceController {
 	
 	@Autowired
-	@Qualifier(value="xserviceimpl")
+	@Qualifier(value="xserviceImpl")
 	private XService xservice;
 	
 	@Value("${server.port}")
@@ -31,4 +33,9 @@ public class XServiceController {
 	public String getName() {
 		return xservice.getName() + " from port: "+port;
 	}
+	
+	@GetMapping(value="/name/dependentServices")
+	public List<String> getNamesOfDependentServices() {
+		return xservice.getNamesOfDependentServices();
+	} 
 }
